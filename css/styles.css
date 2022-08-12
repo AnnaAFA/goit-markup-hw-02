@@ -1,10 +1,16 @@
 :root {
   --primary-font: 'Roboto', sans-serif;
   --accent-color: #2196f3;
+  --btn-bg-color-hover: #188ce8;
   --color-logo-theme-dark: #fff;
   --color-logo-theme-light: #000;
   --primary-color: #212121;
   --secondary-color: #757575;
+  --light-text-color: #fff;
+  --link-color: rgba(255, 255, 255, 0.6);
+  --bg-dark-color: #2f303a;
+  --bg-light-color: #f5f4fa;
+  --bg-card-color: #fff;
 }
 
 .list {
@@ -50,7 +56,7 @@ body {
 
 .btn:hover,
 .btn:focus {
-  background-color: #188ce8;
+  background-color: var(--btn-bg-color-hover);
 }
 
 .main-title {
@@ -62,12 +68,25 @@ body {
   color: var(--primary-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* ============== /COMPONENTS ============== */
 
 /* ============== HEADER ============== */
 
 .menu-link {
-  font-family: inferior;
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -81,7 +100,7 @@ body {
 }
 
 .list-link {
-  font-family: inferior;
+  font-family: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -96,12 +115,16 @@ body {
 .logo-header {
   color: var(--color-logo-theme-light);
 }
+
+.current {
+  color: var(--accent-color);
+}
 /* ============== /HEADER ============== */
 
 /* ============== MAIN ============== */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--bg-dark-color);
 }
 .hero-title {
   font-weight: 900;
@@ -110,16 +133,16 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--light-text-color);
 }
 
 .btn {
-  font-family: inferior;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-  color: #fff;
+  color: var(--light-text-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
@@ -140,23 +163,29 @@ body {
   color: var(--secondary-color);
 }
 
+.team {
+  background: var(--bg-light-color);
+}
+.team-card {
+  background-color: var(--light-text-color);
+}
 /* ============== /MAIN ============== */
 
 /* ============== MAIN-PORTFOLIO ============== */
 
 .service-btn {
-  font-family: inferior;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   letter-spacing: 0.03em;
   color: var(--primary-color);
-  background: #f5f4fa;
+  background: var(--bg-light-color);
   cursor: pointer;
 }
 .service-btn:hover,
 .service-btn:focus {
-  color: #fff;
+  color: var(--light-text-color);
   background-color: var(--accent-color);
 }
 
@@ -182,7 +211,7 @@ body {
   font-style: normal;
 }
 .page-footer {
-  background-color: #2f303a;
+  background-color: var(--bg-dark-color);
 }
 .logo-footer {
   color: var(--color-logo-theme-dark);
@@ -195,10 +224,10 @@ body {
   letter-spacing: 0.03em;
 }
 .address-link {
-  color: #fff;
+  color: var(--light-text-color);
 }
 .info-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--link-color);
 }
 .address-link:hover,
 .address-link:focus {
