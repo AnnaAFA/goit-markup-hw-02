@@ -1,0 +1,211 @@
+:root {
+  --primary-font: 'Roboto', sans-serif;
+  --accent-color: #2196f3;
+  --color-logo-theme-dark: #fff;
+  --color-logo-theme-light: #000;
+  --primary-color: #212121;
+  --secondary-color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+body {
+  font-family: var(--primary-font);
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ============== COMPONENTS ============== */
+
+.logotype {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+}
+
+/* ============== /COMPONENTS ============== */
+
+/* ============== HEADER ============== */
+
+.menu-link {
+  font-family: inferior;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.list-link {
+  font-family: inferior;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-color);
+}
+
+.list-link:hover,
+.list-link:focus {
+  color: var(--accent-color);
+}
+.logo-header {
+  color: var(--color-logo-theme-light);
+}
+/* ============== /HEADER ============== */
+
+/* ============== MAIN ============== */
+
+.hero {
+  background-color: #2f303a;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn {
+  font-family: inferior;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #fff;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.benefit-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.benefit-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+
+/* ============== /MAIN ============== */
+
+/* ============== MAIN-PORTFOLIO ============== */
+
+.service-btn {
+  font-family: inferior;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
+  background: #f5f4fa;
+  cursor: pointer;
+}
+.service-btn:hover,
+.service-btn:focus {
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-color);
+}
+
+.service-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+/* ============== /MAIN-PORTFOLIO ============== */
+
+/* ============== FOOTER ============== */
+
+.address-footer {
+  font-style: normal;
+}
+.page-footer {
+  background-color: #2f303a;
+}
+.logo-footer {
+  color: var(--color-logo-theme-dark);
+}
+
+.address-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.address-link {
+  color: #fff;
+}
+.info-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+.info-link:hover,
+.info-link:focus {
+  color: var(--accent-color);
+}
+/* ============== /FOOTER ============== */
